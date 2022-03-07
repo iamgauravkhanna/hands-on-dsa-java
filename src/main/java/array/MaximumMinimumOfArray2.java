@@ -10,8 +10,8 @@ public class MaximumMinimumOfArray2 {
     }
 
     static void findMinMax(int[] arr) {
-        int min = (int) Collections.min(Arrays.asList(arr));
-        int max = (int) Collections.max(Arrays.asList(arr));
-        System.out.println("MIN : " + min + " & MAX : " + max);
+      //  int min = (int) Collections.min(Arrays.asList(arr));
+      //  int max = (int) Collections.max(Arrays.asList(arr));
+      //  System.out.println("MIN : " + min + " & MAX : " + max);
     }
 }
