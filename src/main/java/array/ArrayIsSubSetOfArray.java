@@ -1,5 +1,8 @@
 package array;
 
+/**
+ * Brute force Approach
+ */
 public class ArrayIsSubSetOfArray {
 
     public static void main(String[] args) {
