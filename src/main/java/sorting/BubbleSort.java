@@ -3,6 +3,7 @@ package sorting;
 import java.util.Random;
 
 public class BubbleSort {
+
     public static void main(String[] args) {
 
         Random rand = new Random();
@@ -15,8 +16,9 @@ public class BubbleSort {
         System.out.println("Before:");
         printArray(numbers);
 
-        //Sorting algorithm here
         boolean swappedSomething = true;
+
+        int iteration = 0;
 
         while (swappedSomething) {
             swappedSomething = false;
@@ -28,17 +30,18 @@ public class BubbleSort {
                     numbers[i] = numbers[i + 1];
                     numbers[i + 1] = temp;
                 }
+                iteration++;
             }
         }
 
-
         System.out.println("\nAfter:");
         printArray(numbers);
+        System.out.println("Number of Iterations : " + iteration);
     }
 
     private static void printArray(int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
+            System.out.print(numbers[i]+" ");
         }
     }
 }
