@@ -2,9 +2,9 @@ package sorting;
 
 import java.util.Random;
 
-public class InsertionSort {
+public class SelectionSort {
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
         int[] arr = {9,2,6,4,1,7,3};
 
@@ -13,24 +13,25 @@ public class InsertionSort {
 
         int iteration = 0;
 
-        //TODO
-        for (int i = 1; i < arr.length; i++) {
-            int temp = arr[i];
-            int j = i - 1;
-            while (j >= 0 && arr[j] > temp) {
-                if (arr[j] > arr[j + 1]) {
-                    arr[j + 1] = arr[j];
-                    j--;
+        for(int i=0;i<arr.length-1;i++){
+            int minPosition = i ;
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[j]<arr[minPosition]){
+                    minPosition=j;
                 }
-                arr[j + 1] = temp;
                 iteration++;
+            }
+            if(minPosition!=i){
+                int temp;
+                temp = arr[i];
+                arr[i]=arr[minPosition];
+                arr[minPosition]=temp;
             }
         }
 
         System.out.println("\nAfter:");
         printArray(arr);
         System.out.print("\nNumber of Iterations : " + iteration);
-
     }
 
     private static void printArray(int[] numbers) {

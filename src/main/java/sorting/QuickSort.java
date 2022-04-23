@@ -5,20 +5,16 @@ import java.util.Random;
 public class QuickSort {
 
     public static void main(String[] args) {
-        Random rand = new Random();
-        int[] numbers = new int[10];
 
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = rand.nextInt(100);
-        }
+        int[] arr = {9,2,6,3,1,7,4};
 
         System.out.println("Before:");
-        printArray(numbers);
+        printArray(arr);
 
-        quicksort(numbers);
+        quicksort(arr);
 
         System.out.println("\nAfter:");
-        printArray(numbers);
+        printArray(arr);
     }
 
     private static void quicksort(int[] array) {
@@ -48,12 +44,10 @@ public class QuickSort {
 
         while (leftPointer < rightPointer) {
 
-            // Walk from the left until we find a number greater than the pivot, or hit the right pointer.
             while (array[leftPointer] <= pivot && leftPointer < rightPointer) {
                 leftPointer++;
             }
 
-            // Walk from the right until we find a number less than the pivot, or hit the left pointer.
             while (array[rightPointer] >= pivot && leftPointer < rightPointer) {
                 rightPointer--;
             }
@@ -61,8 +55,6 @@ public class QuickSort {
             swap(array, leftPointer, rightPointer);
         }
 
-        // This is different from what the video has, and fixes an issue where the last value could potentially be out of order.
-        // Thanks to viewer Wilson Barbosa for suggesting the fix!
         if(array[leftPointer] > array[highIndex]) {
             swap(array, leftPointer, highIndex);
         }
@@ -81,7 +73,7 @@ public class QuickSort {
 
     private static void printArray(int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
+            System.out.print(numbers[i] + " ");
         }
     }
 }
