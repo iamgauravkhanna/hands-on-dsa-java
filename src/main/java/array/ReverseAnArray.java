@@ -41,7 +41,7 @@ public class ReverseAnArray {
     }
 
     static void printArray(int[] arr){
-        System.out.println("");
+        System.out.print("\nArray : ");
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i] + " ");
         }

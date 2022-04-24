@@ -3,7 +3,7 @@ package array;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class KthLargestSmallest {
+public class KthSmallestLargest {
     public static void main(String args[]) {
         int[] arr = {11, 4, 7, 1, 2, 0, 8, 9};
         findKthSmallest(arr, 2);

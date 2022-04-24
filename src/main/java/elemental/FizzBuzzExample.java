@@ -2,13 +2,13 @@ package elemental;
 
 import java.util.Scanner;
 
-public class FizzBuzzExample1 {
+public class FizzBuzzExample {
 
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter number:");
         int n = s.nextInt();
-        System.out.println("The FizzBuzz numberswill be: ");
+        System.out.println("The FizzBuzz numbers will be: ");
         for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) { //multiple of 3 & 5
                 System.out.print("FizzBuzz");
