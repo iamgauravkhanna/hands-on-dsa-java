@@ -1,6 +1,6 @@
 package array;
 
-public class ShiftNegativePostive {
+public class ShiftNegativeLeftPostiveRightWithoutExtraSpace {
 
     public static void shiftIntegers(int arr[], int n) {
         int j = 0, temp;
@@ -22,7 +22,7 @@ public class ShiftNegativePostive {
     }
 
     public static void main(String args[]) {
-        int arr[] = {2, 4, -10, 13, -7, -60, 52, 8, -19};
+        int arr[] = {2, -44, -10, 13, -7, -60, 52, 8, -19};
         int n = arr.length;
         shiftIntegers(arr, n);
         printArray(arr, n);

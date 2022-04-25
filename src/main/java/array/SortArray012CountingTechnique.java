@@ -5,7 +5,8 @@ public class SortArray012CountingTechnique {
     static void sortarray(int[] array) {
 
         System.out.print("Input : ");
-        for(int value : array)
+
+        for (int value : array)
             System.out.print(" " + value);
 
         int countzero = 0;
@@ -23,25 +24,25 @@ public class SortArray012CountingTechnique {
             if (array[i] == 2) {
                 counttwo = counttwo + 1;
             }
-            i = i + 1;
+            i++;
         }
         i = 0;
         while (i < countzero) {
             array[i] = 0;
-            i = i + 1;
+            i++;
         }
         while (i < countone + countzero) {
             array[i] = 1;
-            i = i + 1;
+            i++;
         }
         while (i < counttwo + countone + countzero) {
             array[i] = 2;
-            i = i + 1;
+            i++;
         }
 
         System.out.println("");
         System.out.print("Output : ");
-        for(int value : array)
+        for (int value : array)
             System.out.print(" " + value);
     }
 
