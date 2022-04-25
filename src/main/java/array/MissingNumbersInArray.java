@@ -1,4 +1,4 @@
-package elemental;
+package array;
 
 /**
  * If n is the positive number and a is an array of integers of length n-1
@@ -37,24 +37,13 @@ public class MissingNumbersInArray {
 		return sum;
 	}
 
-	// Main Method
 	public static void main(String[] args) {
 
-		//
 		int numberOfElements = 8;
-
-		//
 		int[] arrayObj = { 1, 4, 2, 3, 7, 8, 6 };
-
-		// Step 1
 		int sumOfNnumbers = sumOfNnumbers(numberOfElements);
-
-		// Step 2
 		int sumOfElements = sumOfElements(arrayObj);
-
-		// Step 3
 		int missingNumber = sumOfNnumbers - sumOfElements;
-
 		System.out.println("Missing Number is = " + missingNumber);
 	}
 }

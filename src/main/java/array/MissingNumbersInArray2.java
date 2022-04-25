@@ -1,4 +1,4 @@
-package elemental;
+package array;
 
 /**
  * Program to find Missing numbers between 1 to n
