@@ -3,30 +3,20 @@ package array;
 public class CommonElementsInThreeArrays {
 
     public static void main(String[] args) {
-        int arr1[] = {1, 1, 2, 3, 11};
-        int arr2[] = {1, 1, 3, 4, 5, 11};
-        int arr3[] = {1, 1, 2, 3, 4, 6, 11};
+        int arr1[] = {0, 1, 2, 3, 11};
+        int arr2[] = {0, 1, 3, 4, 5, 11};
+        int arr3[] = {0, 1, 2, 3, 4, 6, 11};
 
         findCommonElements(arr1, arr2, arr3);
     }
 
     public static void findCommonElements(int[] arr1, int[] arr2, int[] arr3) {
-        // stores size of arr1
+
         int n1 = arr1.length;
-
-        // stores size of arr2
         int n2 = arr2.length;
-
-        // stores size of arr3
         int n3 = arr3.length;
-
-        // stores starting index of arr1
         int i = 0;
-
-        // stores starting index of arr2
         int j = 0;
-
-        // stores starting index of arr3
         int k = 0;
 
         /*
