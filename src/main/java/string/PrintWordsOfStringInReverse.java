@@ -1,4 +1,4 @@
-package elemental;
+package string;
 
 import java.util.regex.Pattern;
 
@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
  * Input : Blue Sky
  * Output : Sky Blue
  */
-public class ReverseAString3 {
+public class PrintWordsOfStringInReverse {
 
     // Method to reverse words of a String
     static String reverseWords(String str) {

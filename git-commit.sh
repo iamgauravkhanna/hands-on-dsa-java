@@ -1,3 +1,5 @@
+ls -ltr
+
 mvn clean
 
 ls -ltr

@@ -1,4 +1,4 @@
-package elemental;
+package string;
 
 import java.util.*;
 

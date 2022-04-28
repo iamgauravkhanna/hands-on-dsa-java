@@ -1,15 +1,7 @@
-package elemental;
+package string;
 
 import java.util.Scanner;
 
-
-/**
- *
- * Input String : gaurav kumar khanna
- *
- * Ouput String : varuag ramuk annahk
- *
- */
 public class ReverseAString2 {
 
     private static Scanner scannerObj;
@@ -29,17 +21,11 @@ public class ReverseAString2 {
         String outputString = "";
 
         for (String s : words) {
-
             for (int i = s.length() - 1; i >= 0; i--) {
-
                 outputString = outputString + s.charAt(i);
-
             }
-
             outputString = outputString + " ";
         }
         System.out.println("Ouput String : " + outputString);
-
     }
-
 }

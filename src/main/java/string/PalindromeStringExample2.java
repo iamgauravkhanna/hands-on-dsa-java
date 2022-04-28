@@ -1,4 +1,4 @@
-package elemental;
+package string;
 
 /**
  * Program to check if a string is a palindrome or not. Remember a string is a

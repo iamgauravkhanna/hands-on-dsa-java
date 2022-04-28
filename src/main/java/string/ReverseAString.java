@@ -1,4 +1,4 @@
-package elemental;
+package string;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,6 +6,25 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class ReverseAString {
+
+    public static void main(String[] args) {
+
+        ReverseAString invertStr = new ReverseAString();
+
+        System.out.println("Reversed String with StringBuffer class => "
+                + invertStr.invertWithStringBuffer("Gaurav Kumar Khanna"));
+
+        System.out.println("Reversed String with Byte Array class => "
+                + invertStr.invertWithoutStringBuffer("Gaurav Kumar Khanna"));
+
+        System.out.println("Reversed String with Recursion class => "
+                + invertStr.reverseStringUsingRecursion("Gaurav Kumar Khanna"));
+
+        System.out.print("Reversed String with List Iterator class => ");
+
+        invertStr.reverseUsingListIterator("Gaurav Kumar Khanna");
+
+    }
 
     // Using StringBuffer - StringBuffer is thread safe
     public String invertWithStringBuffer(String str) {
@@ -15,7 +34,6 @@ public class ReverseAString {
         return stringBuffer.toString();
     }
 
-    // Without Using StringBuffer - StringBuffer is thread safe
     public String invertWithoutStringBuffer(String str) {
 
         int length = str.length();
@@ -71,26 +89,6 @@ public class ReverseAString {
         }
 
     }
-
-    public static void main(String[] args) {
-
-        ReverseAString invertStr = new ReverseAString();
-
-        System.out.println("Reversed String with StringBuffer class => "
-                + invertStr.invertWithStringBuffer("Gaurav Kumar Khanna"));
-
-        System.out.println("Reversed String with Byte Array class => "
-                + invertStr.invertWithoutStringBuffer("Gaurav Kumar Khanna"));
-
-        System.out.println("Reversed String with Recursion class => "
-                + invertStr.reverseStringUsingRecursion("Gaurav Kumar Khanna"));
-
-        System.out.print("Reversed String with List Iterator class => ");
-
-        invertStr.reverseUsingListIterator("Gaurav Kumar Khanna");
-
-    }
-
 }
 
 

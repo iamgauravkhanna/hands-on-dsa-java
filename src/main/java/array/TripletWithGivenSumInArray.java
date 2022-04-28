@@ -3,8 +3,8 @@ package array;
 public class TripletWithGivenSumInArray {
 
     public static void main(String[] args) {
-        int[] arr = {1, 7, 4, 8, 3, 10, 42, 76, 4 , 40, 2};
-        int sum = 46;
+        int[] arr = {1, 7, 4, 8, 3, 10, 42, 76, 4, 40, 2};
+        int sum = 122;
         findTriplet(arr, sum);
     }
 
