@@ -1,59 +1,49 @@
 package string;
 
+import java.util.Arrays;
+
 public class ReplaceSubString {
 
-	public void replaceSubString1() {
-		String str = "I use selenium webdriver. selenium is a tool for web applications automation.";
-		String toBeReplaced = "selenium";
-		String toReplacedWith = "Firefox";
-		String[] astr = str.split(toBeReplaced);
-		StringBuffer strb = new StringBuffer();
-		for (int i = 0; i <= astr.length - 1; i++) {
-			strb = strb.append(astr[i]);
-			if (i != astr.length - 1) {
-				strb = strb.append(toReplacedWith);
-			}
-		}
-		System.out.println(strb);
-	}
+    public static void main(String args[]) {
+        ReplaceSubString replaceSubStringObj = new ReplaceSubString();
+        replaceSubStringObj.replaceSubString1();
+        replaceSubStringObj.replaceSubString2();
+        replaceSubStringObj.replaceSubString3();
+    }
 
-	public void replaceSubString2() {
+    public void replaceSubString1() {
 
-		String str = "I use selenium webdriver. selenium is a tool for web applications automation.";
+        String str = "I use selenium webdriver. selenium is a tool for web applications automation.";
+        String toBeReplaced = "selenium";
+        String toReplacedWith = "Firefox";
+        String[] arrayOfWords = str.split(toBeReplaced);
+        StringBuffer stringBuffer = new StringBuffer();
 
-		String toBeReplaced = "selenium";
+        System.out.println(Arrays.toString(arrayOfWords));
 
-		String toReplacedWith = "Firefox";
+        for (int i = 0; i <= arrayOfWords.length - 1; i++) {
+            stringBuffer = stringBuffer.append(arrayOfWords[i]);
+            if (i != arrayOfWords.length - 1) {
+                stringBuffer = stringBuffer.append(toReplacedWith);
+            }
+        }
+        System.out.println(stringBuffer);
+    }
 
-		String updatedStr = str.replace(toBeReplaced, toReplacedWith);
+    public void replaceSubString2() {
 
-		System.out.println(updatedStr);
-	}
+        String str = "I use selenium webdriver. selenium is a tool for web applications automation.";
+        String toBeReplaced = "selenium";
+        String toReplacedWith = "Firefox";
+        String updatedStr = str.replace(toBeReplaced, toReplacedWith);
+        System.out.println(updatedStr);
+    }
 
-	public void replaceSubString3() {
+    public void replaceSubString3() {
 
-		String str = "I use selenium webdriver. selenium is a tool for web applications automation.";
-
-		StringBuffer stringBufferObj = new StringBuffer(str);
-
-		System.out.println(stringBufferObj.replace(6, 14, "Firefox"));
-
-	}
-
-	public static void main(String args[]) {
-
-		//
-		ReplaceSubString replaceSubStringObj = new ReplaceSubString();
-
-		//
-		replaceSubStringObj.replaceSubString1();
-
-		//
-		replaceSubStringObj.replaceSubString2();
-
-		//
-		replaceSubStringObj.replaceSubString3();
-
-	}
-
+        String str = "I use selenium webdriver. selenium is a tool for web applications automation.";
+        StringBuffer stringBufferObj = new StringBuffer(str);
+        System.out.println(stringBufferObj.replace(6, 14, "Firefox"));
+        System.out.println(stringBufferObj.replace(25, 33, "Firefox"));
+    }
 }
