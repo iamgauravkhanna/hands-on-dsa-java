@@ -1,4 +1,4 @@
-package elemental;
+package string;
 
 public class ReplaceSubString {
 
