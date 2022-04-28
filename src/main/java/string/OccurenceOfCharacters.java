@@ -1,4 +1,4 @@
-package elemental;
+package string;
 
 public class OccurenceOfCharacters {
 
@@ -39,13 +39,13 @@ public class OccurenceOfCharacters {
 
 				} else if (i > 25 && i < 52) {
 
-					System.out.println("Number of Occurrence of " + (char) (i + 71) + " is:" + count[i]);
+					System.out.println("Number of Occurrence of " + (char) (i + 71) + " is: " + count[i]);
 				}
 			}
 
 			else {
 
-				System.out.println("Missing characters are: ");
+				System.out.print("Missing characters are: ");
 
 				if (i >= 0 && i < 26) {
 
