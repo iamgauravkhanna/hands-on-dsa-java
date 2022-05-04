@@ -14,7 +14,7 @@ public class ConvertSentenceToEquivalentMobileNumericKeypadSequence {
                 "9", "99", "999", "9999"
         };
 
-        String input = "GEEKSFORGEEKS";
+        String input = "GAURAV";
         System.out.println(printSequence(str, input));
     }
 
@@ -23,7 +23,7 @@ public class ConvertSentenceToEquivalentMobileNumericKeypadSequence {
 
         int n = input.length();
         for (int i = 0; i < n; i++) {
-            // Checking for space
+
             if (input.charAt(i) == ' ')
                 output = output + "0";
             else {

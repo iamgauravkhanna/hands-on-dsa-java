@@ -20,13 +20,11 @@ public class BalancedBrackets {
         for (int i = 0; i < string.length(); i++) {
             char x = string.charAt(i);
 
-            // Check for Opening Brackets
             if (x == '(' || x == '[' || x == '{') {
                 stack.push(x);
                 continue;
             }
 
-            // If first character is not opening then return false
             if (stack.isEmpty())
                 return false;
 
@@ -34,7 +32,6 @@ public class BalancedBrackets {
             switch (x) {
                 case ')':
                     check = stack.pop();
-                    // We are checking other brackets so that whole string is traversed
                     if (check == '{' || check == '[')
                         return false;
                     break;
