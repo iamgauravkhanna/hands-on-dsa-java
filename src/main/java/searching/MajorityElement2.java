@@ -9,8 +9,8 @@ public class MajorityElement2 {
         findMajority(a);
     }
 
-    private static void findMajority(int[] arr) {
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+    static void findMajority(int[] arr) {
+        HashMap<Integer, Integer> map = new HashMap();
 
         for (int i = 0; i < arr.length; i++) {
             if (map.containsKey(arr[i])) {
@@ -23,6 +23,6 @@ public class MajorityElement2 {
             } else
                 map.put(arr[i], 1);
         }
-        System.out.println(" No Majority element");
+        System.out.println("No Majority element");
     }
 }
