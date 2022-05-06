@@ -1,5 +1,6 @@
 package searching;
 
+// Find element having most occurrence/majority
 public class MajorityElement {
 
     public static void main(String[] args) {
