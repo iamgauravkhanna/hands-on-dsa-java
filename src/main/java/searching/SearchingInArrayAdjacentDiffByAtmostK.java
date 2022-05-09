@@ -4,9 +4,9 @@ public class SearchingInArrayAdjacentDiffByAtmostK {
 
     public static void main(String[] args) {
 
-        int arr[] = {2, 4, 5, 7, 7, 6};
-        int x = 4;
-        int k = 2;
+        int arr[] = {4, 5, 7, 9, 11, 15, 19, 21};
+        int x = 21;
+        int k = 4;
         int n = arr.length;
 
         System.out.println("Element " + x + " is present at index " + search(arr, n, x, k));
@@ -20,6 +20,7 @@ public class SearchingInArrayAdjacentDiffByAtmostK {
             if (arr[i] == x)
                 return i;
             i = i + Math.max(1, Math.abs(arr[i] - x) / k);
+            System.out.println("i = " + i);
         }
         System.out.println("number is " + "not present!");
         return -1;
