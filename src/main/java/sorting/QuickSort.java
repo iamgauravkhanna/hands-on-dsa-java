@@ -12,17 +12,13 @@ public class QuickSort {
         System.out.println("Before:");
         System.out.println(Arrays.toString(arr));
 
-        quicksort(arr);
+        quickSort(arr, 0, arr.length - 1);
 
         System.out.println("\nAfter:");
         System.out.println(Arrays.toString(arr));
     }
 
-    private static void quicksort(int[] array) {
-        quicksort(array, 0, array.length - 1);
-    }
-
-    private static void quicksort(int[] array, int lowIndex, int highIndex) {
+    static void quickSort(int[] array, int lowIndex, int highIndex) {
 
         if (lowIndex >= highIndex) {
             return;
@@ -30,16 +26,17 @@ public class QuickSort {
 
         int pivotIndex = new Random().nextInt(highIndex - lowIndex) + lowIndex;
         int pivot = array[pivotIndex];
+
         swap(array, pivotIndex, highIndex);
 
         int leftPointer = partition(array, lowIndex, highIndex, pivot);
 
-        quicksort(array, lowIndex, leftPointer - 1);
-        quicksort(array, leftPointer + 1, highIndex);
+        quickSort(array, lowIndex, leftPointer - 1);
+        quickSort(array, leftPointer + 1, highIndex);
 
     }
 
-    private static int partition(int[] array, int lowIndex, int highIndex, int pivot) {
+    static int partition(int[] array, int lowIndex, int highIndex, int pivot) {
         int leftPointer = lowIndex;
         int rightPointer = highIndex - 1;
 
