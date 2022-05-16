@@ -1,19 +1,19 @@
 package sorting;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class InsertionSort {
 
     public static void main(String[] args) {
 
-        int[] arr = {9,2,6,4,1,7,3};
+        int[] arr = {9, 2, 6, 4, 1, 7, 3};
 
         System.out.println("Before:");
-        printArray(arr);
+        System.out.println(Arrays.toString(arr));
 
         int iteration = 0;
 
-        //TODO
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i];
             int j = i - 1;
@@ -28,14 +28,8 @@ public class InsertionSort {
         }
 
         System.out.println("\nAfter:");
-        printArray(arr);
+        System.out.println(Arrays.toString(arr));
         System.out.print("\nNumber of Iterations : " + iteration);
 
-    }
-
-    private static void printArray(int[] numbers) {
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
-        }
     }
 }
