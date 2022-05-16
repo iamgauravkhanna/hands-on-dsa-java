@@ -1,20 +1,21 @@
 package sorting;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class QuickSort {
 
     public static void main(String[] args) {
 
-        int[] arr = {9,2,6,3,1,7,4};
+        int[] arr = {9, 2, 6, 3, 1, 7, 4};
 
         System.out.println("Before:");
-        printArray(arr);
+        System.out.println(Arrays.toString(arr));
 
         quicksort(arr);
 
         System.out.println("\nAfter:");
-        printArray(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     private static void quicksort(int[] array) {
@@ -55,10 +56,9 @@ public class QuickSort {
             swap(array, leftPointer, rightPointer);
         }
 
-        if(array[leftPointer] > array[highIndex]) {
+        if (array[leftPointer] > array[highIndex]) {
             swap(array, leftPointer, highIndex);
-        }
-        else {
+        } else {
             leftPointer = highIndex;
         }
 
@@ -69,11 +69,5 @@ public class QuickSort {
         int temp = array[index1];
         array[index1] = array[index2];
         array[index2] = temp;
-    }
-
-    private static void printArray(int[] numbers) {
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.print(numbers[i] + " ");
-        }
     }
 }
