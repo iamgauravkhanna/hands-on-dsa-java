@@ -11,24 +11,20 @@ public class InsertionSort {
         System.out.println("Before:");
         System.out.println(Arrays.toString(arr));
 
-        int iteration = 0;
-
         for (int i = 1; i < arr.length; i++) {
-            int temp = arr[i];
+            int key = arr[i];
             int j = i - 1;
-            while (j >= 0 && arr[j] > temp) {
+            while (j >= 0 && arr[j] > key) {
                 if (arr[j] > arr[j + 1]) {
                     arr[j + 1] = arr[j];
                     j--;
                 }
-                arr[j + 1] = temp;
-                iteration++;
+                arr[j + 1] = key;
             }
         }
 
         System.out.println("\nAfter:");
         System.out.println(Arrays.toString(arr));
-        System.out.print("\nNumber of Iterations : " + iteration);
 
     }
 }

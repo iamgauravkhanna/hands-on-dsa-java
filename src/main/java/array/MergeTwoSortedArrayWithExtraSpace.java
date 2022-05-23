@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class MergeTwoSortedArrayWithExtraSpace {
 
     public static void main(String[] args) {
-        int[] arr1 = {1, 3, 5, 7, 9, 11, 88, 89, 90};
-        int[] arr2 = {2, 4, 6, 8, 10, 77, 97,98,99};
+        int[] arr1 = {1, 3, 5, 7, 9};
+        int[] arr2 = {2, 4, 6, 8, 10};
         mergeArrays(arr1, arr2);
     }
 

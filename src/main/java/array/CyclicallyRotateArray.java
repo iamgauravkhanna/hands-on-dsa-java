@@ -1,20 +1,20 @@
 package array;
 
+import java.util.Arrays;
+
 public class CyclicallyRotateArray {
 
     public static void main(String args[]) {
         int[] arr = {1, 3, 5, 7, 9, 11, 13};
-        rotateArray(arr, 1);
+        rotateArray(arr, 2);
     }
 
     private static void rotateArray(int[] arr, int rotateBy) {
 
         int start = arr[0];
 
-        System.out.println("ORIGINAL ITERATION");
-        for (int element : arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println("Before :");
+        System.out.println(Arrays.toString(arr));
 
         for (int i = 0; i < rotateBy; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -25,9 +25,7 @@ public class CyclicallyRotateArray {
         }
 
         System.out.println("");
-        System.out.println("FINAL ITERATION");
-        for (int element : arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println("After");
+        System.out.println(Arrays.toString(arr));
     }
 }
