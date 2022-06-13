@@ -1,7 +1,7 @@
 package array;
 
 // Using Simple Linear Search
-public class MaximumMinimumOfArray {
+public class MaximumMinimumSumOfArray {
     public static void main(String args[]) {
         findMinMax(new int[]{3, 7, 1, -1, 4});
         findMinMax(new int[]{3, 7, 100, -1, -14});
