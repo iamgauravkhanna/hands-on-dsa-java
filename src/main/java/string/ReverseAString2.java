@@ -26,6 +26,6 @@ public class ReverseAString2 {
             }
             outputString = outputString + " ";
         }
-        System.out.println("Ouput String : " + outputString);
+        System.out.println("Output String : " + outputString);
     }
 }
