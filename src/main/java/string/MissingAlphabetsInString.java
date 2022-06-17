@@ -5,9 +5,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 /**
- * Program to find Missing Alphabets in String
- * <p>
- * Finding Panagram String
+ * Program to find Missing Alphabets in String. Check Panagram String
  */
 public class MissingAlphabetsInString {
 
@@ -42,7 +40,5 @@ public class MissingAlphabetsInString {
         alphabetSetObj.removeAll(inputStringSetObj);
 
         System.out.println("Missing Characters => " + alphabetSetObj);
-
     }
-
 }

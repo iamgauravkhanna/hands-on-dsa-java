@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Program to find Missing Alphabets in String
- * <p>
- * Finding Panagram String
+ * Program to find Missing Alphabets in String. Check Panagram String
  */
 public class MissingAlphabetsInString2 {
 
@@ -44,11 +42,9 @@ public class MissingAlphabetsInString2 {
                 finalString = finalString + (char) (a + 'a');
         }
 
-        if (finalString.length() > 0) {
+        if (finalString.length() > 0)
             System.out.println("Characters Missing : " + finalString);
-        } else {
+        else
             System.out.println("There are no missing characters. String is Pangram");
-        }
-
     }
 }
