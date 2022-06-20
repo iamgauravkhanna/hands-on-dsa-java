@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Find if string is anagram or not
  */
-public class AnagramStrings {
+public class AnagramString {
 
     public static void main(String[] args) {
         String str1 = "Race";
