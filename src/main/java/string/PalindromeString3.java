@@ -2,7 +2,7 @@ package string;
 
 import java.util.*;
 
-class PalindromeStringExample3 {
+class PalindromeString3 {
 	public static void main(String args[]) {
 		String original, reverse = "";
 		Scanner in = new Scanner(System.in);

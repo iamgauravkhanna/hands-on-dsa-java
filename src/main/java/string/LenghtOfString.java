@@ -3,7 +3,7 @@ package string;
 public class LenghtOfString {
 
     public static void main(String[] args) {
-        String string = "Mumbai";
+        String string = "Programming";
         int i = 0;
         for (char c : string.toCharArray())
             i++;

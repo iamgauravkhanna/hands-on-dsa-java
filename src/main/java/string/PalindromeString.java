@@ -6,7 +6,7 @@ package string;
  * palindrome as reverse of "dad" is "dad" whereas "program" is not a
  * palindrome.
  */
-class PalindromeStringExample {
+class PalindromeString {
 
     public static void main(String args[]) {
 
@@ -20,10 +20,9 @@ class PalindromeStringExample {
             reverse = reverse + original.charAt(i);
         }
 
-        if (original.equals(reverse)) {
+        if (original.equals(reverse))
             System.out.println("String '" + original + "' is Palindrome");
-        } else {
+        else
             System.out.println("Oops !! String is not Palindrome");
-        }
     }
-} 
+}
