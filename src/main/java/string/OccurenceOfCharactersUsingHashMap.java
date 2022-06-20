@@ -11,12 +11,13 @@ public class OccurenceOfCharactersUsingHashMap {
         char[] strArray = inputString.toCharArray();
 
         for (char c : strArray) {
+            if (c == ' ')
+                continue;
             if (charCountMap.containsKey(c))
                 charCountMap.put(c, charCountMap.get(c) + 1);
             else
                 charCountMap.put(c, 1);
         }
-
         System.out.println(inputString + " : " + charCountMap);
     }
 

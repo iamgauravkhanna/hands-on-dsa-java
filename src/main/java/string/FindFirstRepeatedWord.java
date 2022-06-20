@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class FindFirstRepeatedWord {
 
     public static void main(String[] args) {
-        firstRepeatedWord("Launch an app faster than my apps");
+        firstRepeatedWord("Java is Java which we know");
     }
 
     public static void firstRepeatedWord(String text) {
@@ -26,7 +26,6 @@ public class FindFirstRepeatedWord {
             } else
                 record.put(word[i], 1);
         }
-
         System.out.println("No Repeating Word found");
     }
 }

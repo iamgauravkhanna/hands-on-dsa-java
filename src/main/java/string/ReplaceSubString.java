@@ -5,10 +5,10 @@ import java.util.Arrays;
 public class ReplaceSubString {
 
     public static void main(String args[]) {
-        ReplaceSubString replaceSubStringObj = new ReplaceSubString();
-        replaceSubStringObj.replaceSubString1();
-        replaceSubStringObj.replaceSubString2();
-        replaceSubStringObj.replaceSubString3();
+        ReplaceSubString obj = new ReplaceSubString();
+        obj.replaceSubString1();
+        obj.replaceSubString2();
+        obj.replaceSubString3();
     }
 
     public void replaceSubString1() {
@@ -18,8 +18,6 @@ public class ReplaceSubString {
         String toReplacedWith = "Firefox";
         String[] arrayOfWords = str.split(toBeReplaced);
         StringBuffer stringBuffer = new StringBuffer();
-
-        System.out.println(Arrays.toString(arrayOfWords));
 
         for (int i = 0; i <= arrayOfWords.length - 1; i++) {
             stringBuffer = stringBuffer.append(arrayOfWords[i]);
