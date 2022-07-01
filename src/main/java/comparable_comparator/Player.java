@@ -1,4 +1,4 @@
-package comparableComparator;
+package comparable_comparator;
 
 public class Player {
 

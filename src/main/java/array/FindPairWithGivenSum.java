@@ -1,7 +1,7 @@
 package array;
 
-/*
-Using Two Pointer given array is sorted
+/**
+ * Using Two Pointer given array is sorted
  */
 public class FindPairWithGivenSum {
 

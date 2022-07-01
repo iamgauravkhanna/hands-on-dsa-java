@@ -1,4 +1,4 @@
-package comparableComparator;
+package comparable_comparator;
 
 import java.util.Arrays;
 
