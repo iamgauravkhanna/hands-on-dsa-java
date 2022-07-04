@@ -1,4 +1,4 @@
-package linkedlist;
+package linked_list;
 
 public class ReverseSinglyLinkedList<T> {
 
