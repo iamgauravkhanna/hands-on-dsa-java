@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 // Program to longest substring without repeating characters
 
-public class LongestSubString {
+public class LongestSubstringWithoutRepeatingCharacters2 {
 
 	//
 	public static String subString(String input) {

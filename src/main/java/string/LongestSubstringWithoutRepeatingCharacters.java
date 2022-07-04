@@ -15,11 +15,11 @@ public class LongestSubstringWithoutRepeatingCharacters {
 
     public static int longestUniqueSubStr(String str) {
 
-        int n = str.length();
+        int length = str.length();
         int result = 0;
 
-        for (int i = 0; i < n; i++)
-            for (int j = i; j < n; j++)
+        for (int i = 0; i < length; i++)
+            for (int j = i; j < length; j++)
                 if (areDistinct(str, i, j))
                     result = Math.max(result, j - i + 1);
 
