@@ -1,4 +1,4 @@
-package dsa.string;
+package leetcode.p_0003_longest_substring_without_repeating_characters;
 
 import java.util.HashSet;
 
