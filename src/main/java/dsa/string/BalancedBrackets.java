@@ -6,12 +6,10 @@ import java.util.Deque;
 public class BalancedBrackets {
 
     public static void main(String[] args) {
-        String string = "([{}])";
 
-        if (isBalanced(string))
-            System.out.println("Balanced ");
-        else
-            System.out.println("Not Balanced ");
+        String string = "([{()[]{}}])";
+
+        System.out.println("Is Balanced String :: " + isBalanced(string));
     }
 
     private static boolean isBalanced(String string) {
@@ -25,6 +23,7 @@ public class BalancedBrackets {
                 continue;
             }
 
+            // if first character is closing then stack will be empty
             if (stack.isEmpty())
                 return false;
 

@@ -1,5 +1,7 @@
 package dsa.string;
 
+import java.util.Arrays;
+
 public class LongestCommonPrefix {
 
     public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class LongestCommonPrefix {
 
         int size = arr.length;
 
-        /* if size is 0, return empty dsa.string */
+        /* if size is 0, return empty string */
         if (size == 0)
             return "";
 
@@ -25,19 +27,20 @@ public class LongestCommonPrefix {
         if (size == 1)
             return arr[0];
 
-        /* Sorting will help to reduce comparison between first and last only
+        /* Sorting will help to reduce comparison between first and last only */
         Arrays.sort(arr);
 
-        /* find the minimum length from first and last dsa.string */
+        /* find the minimum length from first and last string */
         int end = Math.min(arr[0].length(), arr[size - 1].length());
 
-        /* find the common prefix between the first and last dsa.string */
+        /* find the common prefix between the first and last string */
         int i = 0;
         while (i < end && arr[0].charAt(i) == arr[size - 1].charAt(i))
             i++;
 
-        String pre = arr[0].substring(0, i);
-        return pre;
+        String result = arr[0].substring(0, i);
+
+        return result;
     }
 
 }

@@ -15,12 +15,12 @@ public class LongestCommonPrefix1 {
 
     private static String longestCommonPrefixFunc(String[] arr, int n) {
 
-        int minlen = findMinLength(arr, n);
+        int minLength = findMinLength(arr, n);
 
         String result = ""; // Our resultant dsa.string
         char current; // The current character
 
-        for (int i = 0; i < minlen; i++) {
+        for (int i = 0; i < minLength; i++) {
             // Current character (must be same
             // in all strings to be a part of
             // result)
