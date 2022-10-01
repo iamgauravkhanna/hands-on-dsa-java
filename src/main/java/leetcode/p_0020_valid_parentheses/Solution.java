@@ -2,7 +2,7 @@ package leetcode.p_0020_valid_parentheses;
 
 import java.util.Stack;
 
-public class ValidParentheses {
+public class Solution {
 
     public static void main(String[] args) {
 
