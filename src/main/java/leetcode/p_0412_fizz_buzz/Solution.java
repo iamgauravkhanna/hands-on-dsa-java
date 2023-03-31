@@ -9,7 +9,5 @@ public class Solution {
         int n = 10;
 
         List<String> list = new ArrayList<String>();
-
-        for(int i = 1; )
     }
 }
