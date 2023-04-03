@@ -1,5 +1,7 @@
 package dsa.array;
 
+// Iterative Way
+// Time Complexity : O(n)
 public class ReverseAnArray {
 
     public static void main(String args[]){
@@ -24,6 +26,7 @@ public class ReverseAnArray {
         reverseArray(arr3);
     }
 
+    // Using Extra Variable
     static void reverseArray(int[] arr) {
 
         int temp;
