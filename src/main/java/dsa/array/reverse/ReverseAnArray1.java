@@ -1,4 +1,4 @@
-package dsa.array;
+package dsa.array.reverse;
 
 // Recursive Way
 // Time Complexity : O(n)

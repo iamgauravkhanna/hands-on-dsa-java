@@ -1,4 +1,4 @@
-package dsa.array;
+package dsa.array.reverse;
 
 // Using Temp Array
 //Time Complexity - The time complexity of this algorithm is O(n) as we have to traverse the whole array.
