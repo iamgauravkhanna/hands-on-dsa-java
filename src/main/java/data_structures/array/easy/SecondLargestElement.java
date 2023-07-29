@@ -18,16 +18,23 @@ public class SecondLargestElement {
     }
 
     private static void findSecondLargestElement(int[] arr) {
+        
+        if(arr.length<2){
+            System.out.println("Invalid Array Size");
+            return ;
+        }
+        
         int first, second;
         first = second = Integer.MIN_VALUE;
 
+        
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > first)
                 first = arr[i];
             else if (arr[i] > second)
                 second = arr[i];
         }
-        System.out.println("Largest Element :: " + first);
+        System.out.println("First Largest Element :: " + first);
         System.out.println("Second Largest Element :: " + second);
     }
 }
