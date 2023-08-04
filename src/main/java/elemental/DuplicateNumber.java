@@ -29,7 +29,7 @@ public class DuplicateNumber {
 		for (int i = 1; i < 30; i++) {
 			numbers.add(i);
 		}
-		// add duplicate number into the dsa.list
+		// insert duplicate number into the dsa.list
 		numbers.add(22);
 		DuplicateNumber dn = new DuplicateNumber();
 		System.out.println("Duplicate Number: " + dn.findDuplicateNumber(numbers));

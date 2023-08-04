@@ -25,7 +25,7 @@ public class SubsequencesOfString {
             return;
         }
 
-        // We add adding 1st character in dsa.string
+        // We insert adding 1st character in dsa.string
         findsubsequences(s.substring(1), ans + s.charAt(0));
 
         // Not adding first character of the dsa.string
