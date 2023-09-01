@@ -2,6 +2,9 @@ package data_structures.array.easy;
 
 import java.util.Arrays;
 
+/**
+ * Count the number of possible triangles
+ */
 public class FindNumberOfTriangles {
     public static void main(String[] args) {
         //int arr[] = { 10, 21, 22, 100, 101, 200, 300 };

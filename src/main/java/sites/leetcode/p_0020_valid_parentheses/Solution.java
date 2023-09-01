@@ -1,4 +1,4 @@
-package leetcode.p_0020_valid_parentheses;
+package sites.leetcode.p_0020_valid_parentheses;
 
 import java.util.Stack;
 

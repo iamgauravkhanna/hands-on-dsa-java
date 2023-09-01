@@ -1,5 +1,8 @@
 package data_structures.array.easy;
 
+/**
+ * Find the largest three elements in an array
+ */
 public class ThreeLargestDistinctElements {
 
     public static void main(String[] args) {

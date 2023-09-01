@@ -1,4 +1,4 @@
-package leetcode.p_0412_fizz_buzz;
+package sites.leetcode.p_0412_fizz_buzz;
 
 import java.util.ArrayList;
 import java.util.List;

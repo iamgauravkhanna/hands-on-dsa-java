@@ -1,6 +1,9 @@
-package data_structures.array;
+package data_structures.array.easy;
 
 /**
+ *
+ * Program to find Missing numbers between 1 to n
+ *
  * If n is the positive number and a is an dsa.array of integers of length n-1
  * containing elements from 1 to n. Then find the missing number in a in the
  * range from 1 to n. Occurrence of each element is only once. i.e a does not

@@ -1,4 +1,4 @@
-package leetcode.p_0009_palindrome_number;
+package sites.leetcode.p_0009_palindrome_number;
 
 public class PalindromeNumber {
 

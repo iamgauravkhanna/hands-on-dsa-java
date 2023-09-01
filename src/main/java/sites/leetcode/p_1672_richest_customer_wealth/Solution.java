@@ -1,4 +1,4 @@
-package leetcode.p_1672_richest_customer_wealth;
+package sites.leetcode.p_1672_richest_customer_wealth;
 
 public class Solution {
 

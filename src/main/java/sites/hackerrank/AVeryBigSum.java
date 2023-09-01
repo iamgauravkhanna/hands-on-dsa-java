@@ -1,4 +1,4 @@
-package miscellaneous;
+package sites.hackerrank;
 
 import java.io.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package leetcode.p_1480_running_sum_of_1d_array;
+package sites.leetcode.p_1480_running_sum_of_1d_array;
 
 import java.util.Arrays;
 

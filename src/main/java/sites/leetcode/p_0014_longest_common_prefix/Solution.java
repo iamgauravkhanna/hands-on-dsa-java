@@ -1,4 +1,4 @@
-package leetcode.p_0014_longest_common_prefix;
+package sites.leetcode.p_0014_longest_common_prefix;
 
 public class Solution {
 

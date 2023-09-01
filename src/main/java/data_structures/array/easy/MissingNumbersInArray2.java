@@ -1,10 +1,7 @@
-package data_structures.array;
+package data_structures.array.easy;
 
 /**
  * Program to find Missing numbers between 1 to n
- * 
- * @author Gaurav.Khanna
- *
  */
 public class MissingNumbersInArray2 {
 
