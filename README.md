@@ -1,3 +1,3 @@
-# hands-on-miscellaneous-java
+# hands-on-java
 
 DSA examples using Java
