@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class InsertInUnsortedArray2 {
 
     public static void main(String[] args) {
+
         int[] arr = new int[10];
 
         arr[0] = 4;

@@ -5,23 +5,23 @@ public class SortArrayInAscendingOrder {
 	public static void main(String[] args) {
 
 		int n, temp;
-		int[] a = {5, 2, 8, 7, 1};
+		int[] arr = {5, 2, 8, 7, 1};
 
-		for (int i = 0; i < a.length; i++) {
-			for (int j = i + 1; j < a.length; j++) {
-				if (a[i] > a[j])
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[i] > arr[j])
 				{
-					temp = a[i];
-					a[i] = a[j];
-					a[j] = temp;
+					temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
 				}
 			}
 		}
 
 		System.out.print("Ascending Order: ");
 
-		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i] + ",");
-		}
+        for (int element : arr) {
+            System.out.print(element + ",");
+        }
 	}
 }
