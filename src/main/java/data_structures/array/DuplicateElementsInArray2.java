@@ -7,7 +7,6 @@ package data_structures.array;
  *
  * Time Complexity : O(n)
  */
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,34 +14,22 @@ public class DuplicateElementsInArray2 {
 
 	public static void main(String[] args) {
 
-		ArrayList<String> list = new ArrayList<String>();
-
-		// Form a dsa.list of numbers
-		for (int i = 0; i < 19; i++) {
-			list.add(String.valueOf(i));
-		}
-
-		// Insert a new dsa.set of numbers
-		for (int i = 0; i < 19; i += 2) {
-			list.add(String.valueOf(i));
-		}
-
-		System.out.println("Input dsa.list : " + list);
+		int[] arr = {6, 8, 1, 4, 4, 9, 6, 2, 9, 2, 0, 2};
 
         // Time Complexity = O(n)
-		findDuplicate(list);
+		findDuplicate(arr);
 	}
 
-    private static void findDuplicate(ArrayList<String> list) {
+    private static void findDuplicate(int[] list) {
 
-	    Set<String> set = new HashSet<String>();
-	    Set<String> duplicate = new HashSet<String>();
+	    Set<Integer> set = new HashSet<>();
+	    Set<Integer> duplicate = new HashSet<>();
 
-	    for(String string : list){
-	        if(set.add(string)==false){
-                duplicate.add(string);
+	    for(int element : list){
+	        if(!set.add(element)){
+                duplicate.add(element);
             }
         }
-        System.out.println("Duplicate Values dsa.list : " + duplicate);
+        System.out.println("Duplicate Values : " + duplicate);
     }
 }
