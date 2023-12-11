@@ -12,22 +12,22 @@ public class CyclicallyRotateArrayToLeft {
         rotateArray(arr, 2);
     }
 
-    private static void rotateArray(int[] originalArray, int rotateBy) {
+    private static void rotateArray(int[] arr, int rotateBy) {
 
-        int start = originalArray[0];
+        int start = arr[0];
 
-        System.out.println("Before Rotation :: " + Arrays.toString(originalArray));
+        System.out.println("Before Rotation :: " + Arrays.toString(arr));
 
-        System.out.println("Rotate Array to Left by " + rotateBy + " position");
+        System.out.println("Rotate Array to Left by " + rotateBy + " positions");
 
         for (int i = 0; i < rotateBy; i++) {
-            for (int j = 0; j < originalArray.length - 1; j++) {
-                originalArray[j] = originalArray[j + 1];
+            for (int j = 0; j < arr.length - 1; j++) {
+                arr[j] = arr[j + 1];
             }
-            originalArray[originalArray.length - 1] = start;
-            start = originalArray[0];
+            arr[arr.length - 1] = start;
+            start = arr[0];
         }
 
-        System.out.println("After Rotation :: " + Arrays.toString(originalArray));
+        System.out.println("After Rotation :: " + Arrays.toString(arr));
     }
 }

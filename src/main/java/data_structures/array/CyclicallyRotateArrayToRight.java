@@ -2,6 +2,9 @@ package data_structures.array;
 
 import java.util.Arrays;
 
+// Rotate one by one
+// Time Complexity: O(N * d)
+// Auxiliary Space: O(1)
 public class CyclicallyRotateArrayToRight {
 
     public static void main(String[] args) {
